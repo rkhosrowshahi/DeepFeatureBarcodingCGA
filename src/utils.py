@@ -369,7 +369,7 @@ DATASET_URLS = {
     'cifar100': 'https://drive.google.com/uc?export=download&id=1V6vBIX-MW8LGAl7W8cGZHbI4D8FhcoeY',
     'covid19': 'https://drive.google.com/uc?export=download&id=1yUhCG__EJUKei4s5dtagldO0Blh6EFzt',
     'fashion': 'https://drive.google.com/uc?export=download&id=1zAgS9-fGtnRNKY8tVOqMkS8yZHnkDDGB',
-    'tcga': 'https://drive.google.com/file/d/1jZCslLLz_jJ6lctlfutvMN4ljfNn2PQU/view?usp=sharing'
+    'tcga': 'https://drive.google.com/uc?export=download&id=1jZCslLLz_jJ6lctlfutvMN4ljfNn2PQU'
 }
 
 def check_dataset_exists(dataset_name: str, data_dir: str = './data') -> bool:

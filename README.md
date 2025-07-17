@@ -49,7 +49,7 @@ Download the datasets from the following links and extract them to the `./data` 
 2. **CIFAR-100**: https://drive.google.com/uc?export=download&id=1V6vBIX-MW8LGAl7W8cGZHbI4D8FhcoeY
 3. **COVID-19**: https://drive.google.com/uc?export=download&id=1yUhCG__EJUKei4s5dtagldO0Blh6EFzt
 4. **Fashion-MNIST**: https://drive.google.com/uc?export=download&id=1zAgS9-fGtnRNKY8tVOqMkS8yZHnkDDGB
-5. **TCGA**: https://drive.google.com/file/d/1jZCslLLz_jJ6lctlfutvMN4ljfNn2PQU/view?usp=sharing
+5. **TCGA**: https://drive.google.com/uc?export=download&id=1jZCslLLz_jJ6lctlfutvMN4ljfNn2PQU
 
 After downloading (either automatically or manually), your data directory structure should look like:
 
@@ -205,11 +205,11 @@ To ensure reproducibility of results:
 If you use this code in your research, please cite our paper:
 
 ```bibtex
-@article{khosrowshahli2024enhancing,
+@article{khosrowshahli2025enhancing,
   title={Enhancing Image Retrieval Through Optimal Barcode Representation},
   author={Khosrowshahli, Rasa and Kheiri, Farnaz and Bidgoli, Azam Asilian and Tizhoosh, H.R. and Makrehchi, Masoud and Rahnamayan, Shahryar},
-  journal={[Journal Name]},
-  year={2024}
+  journal={Scientific Report},
+  year={2025}
 }
 ```
 
