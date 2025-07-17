@@ -86,7 +86,7 @@ python main.py
 #### Using CGA-dHash on TCGA Brain dataset:
 
 ```bash
-python main.py --dataset tcga_brain_kimianet --method CGA-dHash --k 10 --cga_n_gen 50
+python main.py --dataset tcga_brain_kimianet --method CGA-dHash --k 10 --cga_n_gen 100
 ```
 
 #### Using neural network methods:
@@ -113,7 +113,7 @@ python main.py --dataset cifar10 --method CGA-dHash --download
 - `--method`: Barcoding method (default: `CGA-dHash`)
 - `--k`: Number of nearest neighbors for evaluation (default: 10)
 - `--n_bits`: Number of bits for hash codes (default: 128)
-- `--feature_selection`: Enable feature selection
+- `--feature_selection`: Enable feature selection (only works for TCGA)
 - `--download`: Automatically download datasets if they don't exist
 - `--cga_n_gen`: Number of generations for CGA (default: 100)
 - `--cga_pop_size`: Population size for CGA (default: 100)
