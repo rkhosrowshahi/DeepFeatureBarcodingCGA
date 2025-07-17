@@ -1,0 +1,86 @@
+{
+    "title": "Enhancing Image Retrieval Through Optimal Barcode Representation",
+    "description": "This repository contains the implementation of deep feature barcoding methods using Combinatorial Genetic Algorithm (CGA) for efficient medical image retrieval. The code includes multiple hashing and barcoding techniques evaluated on TCGA (The Cancer Genome Atlas) datasets and other image datasets. The main contribution is the optimization of feature ordering using CGA to improve barcoding performance for histopathological image retrieval.",
+    "creators": [
+        {
+            "name": "Khosrowshahli, Rasa",
+            "affiliation": "Faculty of Mathematics and Science, Brock University, St. Catharines, ON L2S 3A1, Canada"
+        },
+        {
+            "name": "Kheiri, Farnaz",
+            "affiliation": "Faculty of Engineering and Applied Sciences, University of Ontario Institute of Technology, Oshawa, ON L1G 0C5, Canada"
+        },
+        {
+            "name": "Bidgoli, Azam Asilian",
+            "affiliation": "Faculty of Science, Wilfrid Laurier University, Waterloo, ON N2L 3C5, Canada"
+        },
+        {
+            "name": "Tizhoosh, H.R.",
+            "affiliation": "Kimia Lab, Mayo Clinic, Rochester, MN 55905, USA"
+        },
+        {
+            "name": "Makrehchi, Masoud",
+            "affiliation": "Faculty of Engineering and Applied Sciences, University of Ontario Institute of Technology, Oshawa, ON L1G 0C5, Canada"
+        },
+        {
+            "name": "Rahnamayan, Shahryar",
+            "affiliation": "Department of Engineering, Brock University, St. Catharines, ON L2S 3A1, Canada"
+        }
+    ],
+    "keywords": [
+        "deep learning",
+        "feature barcoding", 
+        "genetic algorithm",
+        "medical image retrieval",
+        "hashing",
+        "TCGA",
+        "histopathology",
+        "combinatorial genetic algorithm",
+        "binary codes",
+        "image classification"
+    ],
+    "license": "MIT",
+    "language": "eng",
+    "upload_type": "software",
+    "access_right": "open",
+    "subjects": [
+        {
+            "term": "Medical image analysis",
+            "identifier": "http://id.loc.gov/authorities/subjects/sh85082909"
+        },
+        {
+            "term": "Machine learning", 
+            "identifier": "http://id.loc.gov/authorities/subjects/sh2018002417"
+        },
+        {
+            "term": "Genetic algorithms",
+            "identifier": "http://id.loc.gov/authorities/subjects/sh95008757"
+        }
+    ],
+    "related_identifiers": [
+        {
+            "identifier": "https://github.com/username/DeepFeatureBarcodingCGA",
+            "relation": "isSupplementTo",
+            "resource_type": "software"
+        }
+    ],
+    "references": [
+        "The Cancer Genome Atlas Research Network. Comprehensive genomic characterization defines human glioblastoma genes and core pathways. Nature 455, 1061–1068 (2008).",
+        "Kalra, S., Tizhoosh, H.R., Shah, S. et al. Pan-cancer diagnostic consensus through searching archival histopathology images using artificial intelligence. npj Digit. Med. 3, 31 (2020)."
+    ],
+    "notes": "This software accompanies the research paper on deep feature barcoding with combinatorial genetic algorithm. The code allows for reproducible experiments and comparison of various hashing methods on medical image datasets. TCGA data access requires appropriate permissions and data use agreements.",
+    "method": "This implementation includes: 1) Combinatorial Genetic Algorithm for feature ordering optimization, 2) Multiple baseline hashing methods (aHash, dHash, DFT, etc.), 3) Neural network-based hashing approaches, 4) Comprehensive evaluation metrics (F1-score, Precision@k, mAP), 5) Support for multiple datasets including TCGA organ-specific subsets.",
+    "funding": [
+        {
+            "award": {
+                "title": "Research Grant Title",
+                "number": "Grant-Number-123"
+            },
+            "funder": {
+                "name": "Funding Agency Name"
+            }
+        }
+    ],
+    "version": "1.0.0",
+    "publication_date": "2024-01-01"
+} 
