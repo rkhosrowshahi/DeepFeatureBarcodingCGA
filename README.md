@@ -217,6 +217,8 @@ If you use this code in your research, please cite our paper:
 
 This code is made available for peer review and reproducibility purposes as required by publication guidelines. The code allows readers to repeat the published results and is deposited with a DOI for permanent access.
 
+[![DOI](https://img.shields.io/badge/DOI-10.24433%2FCO.0386311.v1-blue)](https://doi.org/10.24433/CO.0386311.v1)
+
 **Project Developer**: Rasa Khosrowshahli, Faculty of Mathematics and Science, Brock University
 
 ### License
