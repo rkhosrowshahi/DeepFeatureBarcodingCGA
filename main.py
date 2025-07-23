@@ -1,8 +1,16 @@
 import argparse
+import os
+
+import pandas as pd
 from src.utils import setup_seed, load_dataset, evaluate_retrieval
 from src.methods import *
 
 def main(args):
+    if args.feature_selection:
+        feature_selection = "feature_selection"
+    else:
+        feature_selection = ""
+    os.makedirs(os.path.join("results"), exist_ok=True)
     # Set seed
     setup_seed(args.seed)
     # Load dataset
@@ -67,6 +75,14 @@ def main(args):
     
     print(f"{args.method} - F1 score: {f1:.4f}, Precision@k: {precision_k:.4f}, mAP: {mean_ap:.4f}")
 
+    if os.path.exists(os.path.join("results", f"{args.dataset}_{feature_selection}_{args.method}.csv")):
+        df = pd.read_csv(os.path.join("results", f"{args.dataset}_{feature_selection}_{args.method}.csv"))
+        df = pd.concat([df, pd.DataFrame({"F1": [f1], "Precision@k": [precision_k], "mAP": [mean_ap]})], ignore_index=True)
+        df.to_csv(os.path.join("results", f"{args.dataset}_{feature_selection}_{args.method}.csv"), index=False)
+    else:
+        df = pd.DataFrame({"F1": [f1], "Precision@k": [precision_k], "mAP": [mean_ap]})
+        df.to_csv(os.path.join("results", f"{args.dataset}_{feature_selection}_{args.method}.csv"), index=False)
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -91,7 +107,7 @@ if __name__ == "__main__":
                                  "CSQ", "DPSH", "Quantization", "LSH", "aHash", "dHash", "MinMax", "DFT"],
                         help="Method to use")
     # HashingNN parameters
-    parser.add_argument("--n_bits", type=int, default=128, help="Number of bits to hash")
+    parser.add_argument("--n_bits", type=int, default=64, help="Number of bits to hash")
     parser.add_argument("--n_epochs", type=int, default=100, help="Number of epochs to train")
     parser.add_argument("--batch_size", type=int, default=128, help="Batch size")
     parser.add_argument("--lr", type=float, default=0.001, help="Learning rate")

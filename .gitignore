@@ -4,3 +4,4 @@ __pycache__/
 pymoo/
 .DS_Store
 .vscode/
+results/
